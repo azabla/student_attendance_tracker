@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import SideNav from "./_components/SideNav";
+import Header from "./_components/Header";
 
-function Layout({children}) {
+function layout({ children }) {
   return (
-    <div>{children}</div>
-  )
+    <div>
+      <div className="md:w-72 fixed hidden md:block">
+        <SideNav />
+      </div>
+      <div className="md:ml-64">
+        <Header />
+      </div>
+      <div>{children}</div>
+    </div>
+  );
 }
 
-export default Layout
+export default layout;

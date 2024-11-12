@@ -2,14 +2,14 @@
 import { useTheme } from 'next-themes'
 import React, { useEffect } from 'react'
 
-function dashboard() {
+function Dashboard() {
     const { setTheme } = useTheme()
     useEffect(() => {
     setTheme('system')
     }, [])
   return (
-    <div>dashboard</div>
+    <div></div>
   )
 }
 
-export default dashboard
+export default Dashboard
